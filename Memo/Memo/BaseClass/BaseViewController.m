@@ -13,6 +13,7 @@
 #import "GCDTestViewController.h"
 #import "MasonryViewController.h"
 #import "STableViewController.h"
+#import "MTableViewController.h"
 
 @interface BaseViewController () <UITableViewDelegate,UITableViewDataSource> {
     NSArray *baseArray;
@@ -37,7 +38,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    baseArray = [[NSArray alloc] initWithObjects:@"类别和类扩展",@"KVO",@"GCD分段下载图片",@"Label自动换行",@"'GCD多线程",@"Masonry",@"tableView单选", nil];
+    baseArray = [[NSArray alloc] initWithObjects:@"类别和类扩展",@"KVO",@"GCD分段下载图片",@"Label自动换行",@"'GCD多线程",@"Masonry",@"tableView单选",@"tableView多选", nil];
     
     _baseTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width, [[UIScreen mainScreen] bounds].size.height)];
     _baseTableView.dataSource = self;
@@ -109,6 +110,11 @@
         masonryViewController = nil;
     }else if (indexPath.row == 6) {
         STableViewController *testViewController = [[STableViewController alloc] init];
+        testViewController.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:testViewController animated:YES];
+        testViewController = nil;
+    }else if (indexPath.row == 7) {
+        MTableViewController *testViewController = [[MTableViewController alloc] init];
         testViewController.view.backgroundColor = [UIColor whiteColor];
         [self.navigationController pushViewController:testViewController animated:YES];
         testViewController = nil;

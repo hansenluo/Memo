@@ -27,6 +27,7 @@
 		EAA00AEF228D00CB0008CE94 /* GCDTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA00AE9228D00CB0008CE94 /* GCDTestViewController.m */; };
 		EAA00AFC228D00EE0008CE94 /* KVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA00AF9228D00EE0008CE94 /* KVOViewController.m */; };
 		EAA00AFD228D00EE0008CE94 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA00AFB228D00EE0008CE94 /* Person.m */; };
+		EAA00B01228D08010008CE94 /* MTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAA00B00228D08010008CE94 /* MTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		EAA00AF9228D00EE0008CE94 /* KVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOViewController.m; sourceTree = "<group>"; };
 		EAA00AFA228D00EE0008CE94 /* KVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOViewController.h; sourceTree = "<group>"; };
 		EAA00AFB228D00EE0008CE94 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EAA00AFF228D08010008CE94 /* MTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTableViewController.h; sourceTree = "<group>"; };
+		EAA00B00228D08010008CE94 /* MTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTableViewController.m; sourceTree = "<group>"; };
 		F308C67BA70944A10A22BD92 /* Pods-MemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemoTests/Pods-MemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FB354FA96C16F709752DB099 /* libPods-Memo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Memo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -177,6 +180,7 @@
 				EAA00AD7228D00CB0008CE94 /* Label自动换行 */,
 				EAA00AE1228D00CB0008CE94 /* Masonry */,
 				EAA00ADE228D00CB0008CE94 /* tableView单选 */,
+				EAA00AFE228D07DF0008CE94 /* tableView多选 */,
 				EAA00AA1228CFFC00008CE94 /* Main.storyboard */,
 				EAA00AA4228CFFC20008CE94 /* Assets.xcassets */,
 				EAA00AA6228CFFC20008CE94 /* LaunchScreen.storyboard */,
@@ -220,8 +224,8 @@
 		EAA00AD7228D00CB0008CE94 /* Label自动换行 */ = {
 			isa = PBXGroup;
 			children = (
-				EAA00AD8228D00CB0008CE94 /* WordWrapViewController.m */,
 				EAA00AD9228D00CB0008CE94 /* WordWrapViewController.h */,
+				EAA00AD8228D00CB0008CE94 /* WordWrapViewController.m */,
 			);
 			path = "Label自动换行";
 			sourceTree = "<group>";
@@ -229,8 +233,8 @@
 		EAA00ADA228D00CB0008CE94 /* 类别和类扩展 */ = {
 			isa = PBXGroup;
 			children = (
-				EAA00ADB228D00CB0008CE94 /* NSString+Category.h */,
 				EAA00ADC228D00CB0008CE94 /* UIView+Extension.h */,
+				EAA00ADB228D00CB0008CE94 /* NSString+Category.h */,
 				EAA00ADD228D00CB0008CE94 /* NSString+Category.m */,
 			);
 			path = "类别和类扩展";
@@ -239,8 +243,8 @@
 		EAA00ADE228D00CB0008CE94 /* tableView单选 */ = {
 			isa = PBXGroup;
 			children = (
-				EAA00ADF228D00CB0008CE94 /* STableViewController.m */,
 				EAA00AE0228D00CB0008CE94 /* STableViewController.h */,
+				EAA00ADF228D00CB0008CE94 /* STableViewController.m */,
 			);
 			path = "tableView单选";
 			sourceTree = "<group>";
@@ -257,8 +261,8 @@
 		EAA00AE4228D00CB0008CE94 /* GCD分断下载大图片合拼 */ = {
 			isa = PBXGroup;
 			children = (
-				EAA00AE5228D00CB0008CE94 /* GroupViewController.m */,
 				EAA00AE6228D00CB0008CE94 /* GroupViewController.h */,
+				EAA00AE5228D00CB0008CE94 /* GroupViewController.m */,
 			);
 			path = "GCD分断下载大图片合拼";
 			sourceTree = "<group>";
@@ -276,11 +280,20 @@
 			isa = PBXGroup;
 			children = (
 				EAA00AF8228D00EE0008CE94 /* Person.h */,
+				EAA00AFB228D00EE0008CE94 /* Person.m */,
 				EAA00AF9228D00EE0008CE94 /* KVOViewController.m */,
 				EAA00AFA228D00EE0008CE94 /* KVOViewController.h */,
-				EAA00AFB228D00EE0008CE94 /* Person.m */,
 			);
 			path = KVO;
+			sourceTree = "<group>";
+		};
+		EAA00AFE228D07DF0008CE94 /* tableView多选 */ = {
+			isa = PBXGroup;
+			children = (
+				EAA00AFF228D08010008CE94 /* MTableViewController.h */,
+				EAA00B00228D08010008CE94 /* MTableViewController.m */,
+			);
+			path = "tableView多选";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,6 +497,7 @@
 				EAA00AEA228D00CB0008CE94 /* WordWrapViewController.m in Sources */,
 				EAA00AD5228D00A50008CE94 /* ViewController.m in Sources */,
 				EAA00AAB228CFFC20008CE94 /* main.m in Sources */,
+				EAA00B01228D08010008CE94 /* MTableViewController.m in Sources */,
 				EAA00AD4228D00A50008CE94 /* BaseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,7 +672,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Memo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.Memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -672,7 +689,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Memo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.Memo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -686,7 +706,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.MemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -701,7 +725,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.MemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -715,7 +743,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.MemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -729,7 +761,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = DCShare.MemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

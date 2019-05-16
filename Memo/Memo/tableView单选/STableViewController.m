@@ -41,8 +41,10 @@
     
     if ([tagArray[indexPath.row] isEqualToString:@"0"]) {
         cell.accessoryType = UITableViewCellAccessoryNone;
+        //cell.checkBtn.selected = NO;
     } else {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
+       // cell.checkBtn.selected = YES;
     }
     
     cell.textLabel.text = [NSString stringWithFormat:@"第%ld行",(long)indexPath.row];
